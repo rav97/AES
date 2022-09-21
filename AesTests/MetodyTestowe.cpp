@@ -131,7 +131,7 @@ void Test_OdpornoscNaZmianeBitu(AesModes mode)
 	for (int i = 0; i < 70; i++)
 		input += char(0);
 
-	cout << "Tekst jawny:" << endl << DataBlocksHexStringFormat(input) << endl << endl;
+	cout << "Tryb " << AesModeToString(mode) << endl << "Tekst jawny:" << endl << DataBlocksHexStringFormat(input) << endl << endl;
 
 	string ctext = DefaultEncrypt(mode, input);
 
@@ -157,6 +157,7 @@ void Test_ZmianaIV(AesModes mode)
 	for (int i = 0; i < 64; i++)
 		ptext += char(0);
 
+	cout << "Tryb " << AesModeToString(mode) << endl;
 	cout << "Oryginalny tekst jawny:" << endl << DataBlocksHexStringFormat(ptext) << endl << endl;
 	cout << "Przeniesienie szyfrogramu do innego sektora (zmiana IV/Nonce/Tweak)\n\n";
 	cout << "Odszyfrowany szyfrogram w innym sektorze:" << endl;

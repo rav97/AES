@@ -18,5 +18,5 @@ int main()
 
 	//Test_ZmianaIV(AES_XTS_128);
 
-	//Test_DlugoscSzyfrogramow(AES_CBC_128);
+	//Test_DlugoscSzyfrogramow(AES_XTS_128);
 }
